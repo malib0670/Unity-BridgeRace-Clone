@@ -59,21 +59,6 @@ public class RedManager : MonoBehaviour
                     agent.SetDestination(finalDestination[randomNumber].transform.position);
                 }
             }
-
-            /*if (furthest)
-            {
-                destination = objectsInArea[0].transform.position;
-                agent.SetDestination(destination);
-                if (RedStacks.stackListRed.Count > 0)
-                {
-                    GameObject.Find("Stack Parent Red").transform.GetChild
-                        (GameObject.Find("Stack Parent Red").transform.childCount - 1).gameObject.GetComponent<BoxCollider>().enabled = false;
-                }
-                if (RedStacks.stackListRed.Count > 4)
-                {
-                    agent.SetDestination(finalDestination[randomNumber].transform.position);
-                }
-            }*/
         }
 
         else if (objectsInArea.Length == 0 && RedStacks.stackListRed.Count == 0)
@@ -87,7 +72,6 @@ public class RedManager : MonoBehaviour
         if (other.CompareTag("Wall"))
         {
             randomNumber = 3;
-            //agent.SetDestination(finalDestination[3].transform.position);
         }
     }
 

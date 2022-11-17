@@ -59,20 +59,6 @@ public class BlueManager : MonoBehaviour
                 }
             }
 
-            /*if (furthest)
-            {
-                destination = objectsInArea[0].transform.position;
-                agent.SetDestination(destination);
-                if (BlueStacks.stackListBlue.Count > 0)
-                {
-                    GameObject.Find("Stack Parent Blue").transform.GetChild
-                        (GameObject.Find("Stack Parent Blue").transform.childCount - 1).gameObject.GetComponent<BoxCollider>().enabled = false;
-                }
-                if (BlueStacks.stackListBlue.Count > 4)
-                {
-                    agent.SetDestination(finalDestination[randomNumber].transform.position);
-                }
-            }*/
         }
 
         else if (objectsInArea.Length == 0 && BlueStacks.stackListBlue.Count == 0)
@@ -86,7 +72,6 @@ public class BlueManager : MonoBehaviour
         if (other.CompareTag("Wall"))
         {
             randomNumber = 3;
-            //agent.SetDestination(finalDestination[3].transform.position);
         }
     }
 
